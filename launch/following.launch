@@ -1,6 +1,6 @@
 <launch>
 
-    <node pkg="following_wall" type="follow_wall.py" name="follow_wall" output="screen" ></node>
+    <node pkg="following_wall" type="follow_path_goal.py" name="follow_path_goal" output="screen" ></node>
 
     <node pkg="following_wall" type="monitor.py" name="monitor"></node>
 

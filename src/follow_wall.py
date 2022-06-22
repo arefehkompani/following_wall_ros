@@ -14,12 +14,12 @@ class PIDController():
         rospy.init_node('wall_follower', anonymous=False)
         
         self.k_i = 0.0
-        self.k_p = 0.5
-        self.k_d = 15
+        self.k_p = 0.8
+        self.k_d = 12
         
         self.dt = 0.005
-        self.v = 0.5
-        self.D = 0.5
+        self.v = 0.3
+        self.D = 0.7
         rate = 1/self.dt
         
         self.r = rospy.Rate(rate)
