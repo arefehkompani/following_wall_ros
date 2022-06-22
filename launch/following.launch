@@ -1,0 +1,13 @@
+<launch>
+
+    <node pkg="following_wall" type="follow_wall.py" name="follow_wall" output="screen" ></node>
+
+    <node pkg="following_wall" type="monitor.py" name="monitor"></node>
+
+
+    <include file="$(find following_wall)/launch/turtlebot3_big_wall.launch"></include>
+    
+    <include file="$(find turtlebot_rviz_launchers)/launch/view_robot.launch"/>
+
+   
+</launch>
